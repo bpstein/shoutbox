@@ -1,9 +1,10 @@
 <?php
+	// Connect to MySQL
+	$con = mysqli_connect('localhost', 'root', '', 'jsshoutbox');
 
-		function sayIt($words) {
-			echo $words;
-		}
+	if(mysqli_connect_errno()) {
+		echo 'Failed to connect: '.mysqli_connect_error();
+	}
 
-		sayIt('Hello again!');
 
 ?>
